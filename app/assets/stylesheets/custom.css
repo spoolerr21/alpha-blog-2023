@@ -1,3 +1,24 @@
 #logo {
-    color: brown;
+    float:
+        color #fff;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    font-weight: bold;
+
+}
+
+#home-container {
+    margin-top: 25px;
+}
+
+#jumbotron-class {
+    background-image: url('jumbo-copy.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+
+#page-content {
+    background-color: lightgray;
 }
