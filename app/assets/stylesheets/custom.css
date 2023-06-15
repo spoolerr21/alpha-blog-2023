@@ -11,6 +11,10 @@
     margin-top: 25px;
 }
 
+#form-container {
+    margin-top: 15px;
+}
+
 #jumbotron-class {
     background-image: url('jumbo-copy.png');
     background-position: center center;
