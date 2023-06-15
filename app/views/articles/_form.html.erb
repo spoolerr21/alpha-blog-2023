@@ -1,7 +1,6 @@
 <div class="container">
     <div class="col-10">
         <%= render 'shared/errors' %>
-
         <div class="row justify-content-center">
             <%= form_with(model: @article, class: "shadow p-3 mb-3 bg-secondary rounded", local:true) do |f| %>
                 <div class="form-group row" id="form-container">
@@ -25,7 +24,7 @@
             <% end %>
         </div>
     </div>
-    <div class="container d-flex justify-content-center" id="form-container">
+    <div class="d-flex justify-content-center mb-3">
         <%= link_to '[ Cancel and return to articles listing ]', articles_path, class: "text-dark" %>
     </div>
 </div>
