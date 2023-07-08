@@ -38,6 +38,7 @@ class ArticlesController < ApplicationController
     
     def destroy
         @article.destroy
+        puts "I am in destroy method"
         params[:id] = nil
         flash[:notice] = "Article has been deleted"
         redirect_to :action => :index
