@@ -3,6 +3,8 @@ Rails.application.routes.draw do
   root 'pages#home'
   get 'about', to: 'pages#about'
   resources :articles, only: [:show, :index, :new, :create, :edit, :update, :destroy]
+  get 'signup', to: 'users#new'
+  resources :users, except: [:new]
   # resources :articles, except: [:destroy] # this will add all get request links automatically except destroy link
   
   # we need this 2 lines for our delete link_to setup
