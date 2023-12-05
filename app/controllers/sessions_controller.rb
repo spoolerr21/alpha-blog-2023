@@ -11,7 +11,7 @@ class SessionsController < ApplicationController
             redirect_to user
         else
             flash[:alert] = "There was something wrong with your login details"
-            redirect_to login_path
+            render 'new', status: :unprocessable_entity
         end
 
     end
