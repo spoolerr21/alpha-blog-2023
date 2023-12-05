@@ -9,7 +9,7 @@ class SessionsController < ApplicationController
             flash[:notice] = "Logged in successfully"
             redirect_to user
         else
-            puts "HERE"
+            puts "combination of username and password is incorrect"
             # flash message is not working for render, we need to use flash.now
             flash.now[:alert] = "Invalid email/password combination" # Add flash message for invalid login
             render 'new'
