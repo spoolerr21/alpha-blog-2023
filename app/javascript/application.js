@@ -5,3 +5,7 @@ Turbo.session.drive = true
 import "@hotwired/turbo-rails"
   
 console.log("Hello from app/javascript/application.js")
+
+$(document).ready(function() {
+    $('.dropdown-toggle').dropdown();
+  });  

@@ -13,5 +13,5 @@ Rails.application.routes.draw do
   delete 'logout', to: 'sessions#destroy'
   # we need this 2 lines for our delete link_to setup
   # delete 'articles/:id/delete' => 'articles#destroy', as: 'articles_delete'
-  get '/articles/:id/delete' => 'articles#destroy'
+  # get '/articles/:id/delete' => 'articles#destroy'
 end
