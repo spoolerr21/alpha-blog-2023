@@ -10,6 +10,10 @@
     <%= stylesheet_link_tag "custom", "data-turbo-track": "reload" %>
     <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
     <%= javascript_importmap_tags %>
+    <!-- Load Tabulator first -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/tabulator-tables@4.9.3/dist/js/tabulator.min.js"></script>
+    <!-- Load the Bootstrap5 theme -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tabulator/5.3.0/css/tabulator_bootstrap5.min.css" integrity="sha512-vJo2HtHjfkBKVO8P4swma+5P0n/AtqI8LW6Dxp9pPq/At5gCAq+YwFn7no5JbL61sas2M4Q2IUf59Mmn6wTwug==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
 
   <body id="page-content">
